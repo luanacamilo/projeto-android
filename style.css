@@ -1,0 +1,258 @@
+@charset "UTF-8";
+
+@font-face {
+   font-family: iDroid ;
+   src: url(fontes/idroid.otf);
+}
+
+@font-face {
+   font-family: BebasNeue_Regular;
+   src: url(fontes/BebasNeue-Regular.ttf);
+}
+
+* {
+   margin: 0px;
+   padding: 0px;
+}
+
+
+:root {
+
+   --fontepadrao: Arial, Helvetica, Verdana, sans-serif;
+   --fontdestaque: BebasNeue_Regular;
+   --fontandroid: iDroid;
+
+   --cor01: #83e1ad;
+   --cor02: #3ddc84;
+   --cor03: #2fa866;
+   --cor04: #1a5c37;
+   --cor05: #063d1e;
+}
+
+body {
+   background-color: #c5ebd6;
+} 
+
+main {
+   background-color: white;
+   min-width: 300px;
+   max-width: 1000px;
+   margin: auto;
+   margin-bottom: 40px;
+   padding: 20px;
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+}
+
+main > img {
+   width: 100%;
+}
+
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+header#degrade > h1 {
+   font-family: var(--fontdestaque);
+   font-size: 3em;
+   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.685);
+   font-weight: normal;
+}
+
+header#degrade > h2 {
+   font-family: var(--fontepadrao);
+   font-size: 1.2em;
+   padding-top: 10px;
+   padding-left: 10px;
+   padding-right: 10px;
+   text-shadow: 2px 2px 0px black;
+   color: white;
+   text-decoration: none;
+
+}
+
+header#outro {
+    background-color:var(--cor05);
+    font-family: var(--fontepadrao);
+    padding-bottom: 15px;
+    font-weight: bold;
+}
+
+header#outro > a {
+   color: white;
+   text-decoration: none;
+   text-align: justify;
+}
+
+header#outro > a:hover {
+   background-color: var(--cor03);
+   border-radius: 5px ;
+   color: var(--cor05);
+   text-decoration: underline;
+   transition-duration: 0.5s;
+}
+
+
+header#degrade {
+    background-image: linear-gradient(to bottom, #3ddc84, #063d1e);
+    height: 200px;
+    padding-top: 40px;
+    min-height: 150px;
+}
+
+h1#primeiro {
+    font-family: var(--fontandroid);
+    color: green;
+    text-align: justify;
+    font-weight: normal;
+    font-size: 1.8em;
+}
+
+ p {
+    text-align: justify;
+    margin: 15px 0px;
+    font-size: 1em;
+ }
+
+article.main > p {
+   text-indent: 20px;
+}
+
+ h2.segundo {
+    font-family: var(--fontandroid);
+    color: var(--cor05);
+    background-image: linear-gradient(to right, var(--cor01), transparent);
+    text-align: justify;
+    font-size: 1.3em;
+    font-weight: normal;
+ }
+
+ a.header {
+    padding: 15px;
+ }
+
+ aside {
+    
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--cor01);
+    margin: auto;
+    display: block;
+ }
+
+ aside > h2#div {
+    color: white;
+    text-align: justify;
+    background-color: var(--cor04);
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+    font-family: var(--fontepadrao);
+    font-size: 16px;
+ }
+
+article > p#pdadiv {
+   text-align: justify;
+}
+
+aside  ul {
+   list-style-position: inside;
+   columns: 2;
+   list-style-type: '\2714\00A0\00A0';
+}
+
+ a.lista {
+    text-decoration: none;
+    color: black;
+ }
+
+ footer {
+    background-color: var(--cor05);
+    color: white;
+    padding: 1px; 
+    text-decoration: none; 
+
+ }
+
+ article > p#extra {
+    background-color: white;
+    padding: 2px 2px 2px 2px;
+ }
+
+footer > p {
+   text-align: center;
+}
+
+footer strong#footer:hover {
+   text-decoration: underline;
+   color: #41e78c;
+}
+
+strong#footer {
+   text-decoration: none;
+   color: white;
+   font-weight: bolder;
+}
+
+
+strong {
+   color: green;
+}
+
+ a.link{
+   color: var(--cor05);
+   font-weight: bold;
+   background-color: #41e78c;
+   padding: 2px 6px;
+   text-decoration: none;
+}
+
+a.link::after {
+   content: '\00A0\1F517';
+}
+
+a:hover {
+   text-decoration: underline;
+   color: var(--cor04);
+}
+
+main img.bugdroid {
+
+   display: block;
+   margin: auto;
+   max-width: 350px;
+}
+
+main img.centralizar {
+   margin: auto;
+   display: block;
+   width: 100%;
+}
+
+p#extra {
+   text-align: center;
+}
+
+div.video {
+   background-color: var(--cor05);
+   margin: 0px -20px 30px -20px;
+   padding: 20px;
+   padding-bottom: 57%;
+   position: relative;
+}
+
+div.video > iframe {
+   position: absolute;
+   top: 5%;
+   left: 5%;
+   width: 90%;
+   height: 90%;
+}
+
